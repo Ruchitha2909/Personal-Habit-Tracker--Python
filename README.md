@@ -1,5 +1,29 @@
+🎯 Python Habit Tracker
 
-## 🛠️ Technologies Used
+A command-line application built with Python to create, manage, and track personal habits. This project demonstrates core Object-Oriented Programming (OOP) principles including Inheritance, Encapsulation, and Abstraction.
+
+📖 Overview
+
+This Habit Tracker allows users to define different types of habits, update their progress, and view a summary. It's designed to be a simple yet powerful demonstration of software design patterns in a practical application.
+
+✨ Features
+
+-   **Habit Categorization:** Create two specific types of habits: `HealthHabit` and `LearningHabit`.
+-   **Progress Tracking:** Update and monitor the progress percentage for each habit.
+-   **Polymorphic Display:** Each habit type displays its information in a unique way using method overriding.
+-   **Interactive CLI Menu:** Easy-to-use text-based menu system for navigation.
+-   **Data Encapsulation:** Habit names and progress are protected as private attributes, accessed via getter methods.
+
+🧩 Object-Oriented Design
+
+The project architecture is built on solid OOP principles:
+
+-   **Abstraction:** The abstract base class `Habit` defines the required structure (`track` method) for all habits.
+-   **Inheritance:** `PersonalHabit` inherits from `Habit`, and `HealthHabit`/`LearningHabit` inherit from `PersonalHabit`, creating a clear hierarchy.
+-   **Encapsulation:** The `__name` and `__progress` attributes are private and can only be modified through public methods like `update_progress()`.
+-   **Polymorphism:** The `track()` method is overridden in each subclass to display habit-specific details (e.g., duration for health habits, topic for learning habits).
+
+🛠️ Technologies Used
 
 -   **Python 3**
 -   **OOP Concepts:**
@@ -8,21 +32,3 @@
     -   Encapsulation (Private attributes with getters)
     -   Polymorphism (Method overriding)
 
-## 🔮 Future Enhancements
-
-This project can be extended with features like:
--   Data persistence (saving habits to a JSON file or database).
--   Setting daily/weekly goals.
--   A streak counter for consistent habit completion.
--   A graphical user interface (GUI) using Tkinter or PyQt.
--   More habit categories (e.g., FinancialHabit, SocialHabit).
-
-## 👨‍💻 Author
-
-[Your Name]
--   GitHub: [@yourusername](https://github.com/yourusername)
--   LinkedIn: [Your Profile](https://www.linkedin.com/in/yourprofile/)
-
----
-
-**⭐ If you found this project useful, please give it a star!**
